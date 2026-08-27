@@ -1,6 +1,6 @@
 <div align="center">
 
-#  KUMO — E-COMMERCE WEBSITE
+#  KUMO  E-COMMERCE WEBSITE
 
 <img width="1920" height="908" alt="image" src="https://github.com/user-attachments/assets/4162cd35-6663-49d4-a693-f1eb7603ed6c" />
 <img width="1920" height="908" alt="image" src="https://github.com/user-attachments/assets/5a1e0eb3-813a-49be-ad2c-d13fb3420053" />
