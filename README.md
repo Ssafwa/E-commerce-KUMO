@@ -1,2 +1,100 @@
-# E-commerce-KUMO
- E-COMMERCE WEBSITE WITHOUT BACK END 
+<div align="center">
+
+#  KUMO — E-COMMERCE WEBSITE
+----------------------------
+
+**A sleek, responsive front-end e-commerce landing page**
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Made  by Safwan](https://img.shields.io/badge/Made%20by-Safwan-orange?style=for-the-badge)](https://github.com/Ssafwa)
+
+[![Repo Size](https://img.shields.io/github/repo-size/Ssafwa/E-commerce-KUMO?style=flat-square)](https://github.com/Ssafwa/E-commerce-KUMO)
+[![Last Commit](https://img.shields.io/github/last-commit/Ssafwa/E-commerce-KUMO?style=flat-square)](https://github.com/Ssafwa/E-commerce-KUMO/commits/main)
+[![Stars](https://img.shields.io/github/stars/Ssafwa/E-commerce-KUMO?style=flat-square)](https://github.com/Ssafwa/E-commerce-KUMO/stargazers)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](#-license)
+
+</div>
+
+---
+
+##  OVERVIEW
+-------------
+
+**KUMO** is a  responsive e-commerce landing page built with pure HTML, CSS, and JavaScript — no frameworks, no back end, no dependencies beyond a couple of CDN-hosted icon and font libraries. It's designed as a clean, production-style storefront template: hero banner, product showcase, client reviews, blog-style updates, and a full footer — all wrapped in a smooth, mobile-first interface.
+
+
+
+##  Features
+------------
+
+-  **Sticky, responsive navbar** — collapses into a slick mobile hamburger menu with smooth open/close toggle
+-  **Hero section** with seasonal campaign banner and call-to-action button
+-  **Trending Products grid** — 8 product cards with images, star ratings, sale/new/hot badges, and pricing
+-  **Animated like button** — click the heart icon on any product for an instant "liked" burst animation
+-  **Client review section** for social proof
+-  **Full footer** with contact details, social links, and site navigation columns
+-  **Fully responsive** — custom breakpoints for tablet and mobile layouts
+-  **Modern typography & icons** via Google Fonts (Jost), Boxicons, and Font Awesome
+
+## Tech Stack
+-------------
+
+| Layer | Technology |
+|---|---|
+| Structure | HTML5 |
+| Styling | CSS3 (Flexbox, Grid, Media Queries) |
+| Interactivity | Vanilla JavaScript (DOM events) |
+| Fonts | [Google Fonts – Jost](https://fonts.google.com/specimen/Jost) |
+| Icons | [Boxicons](https://boxicons.com/), [Font Awesome](https://fontawesome.com/) |
+
+##  Project Structure
+---------------------
+
+```
+E-commerce-KUMO/
+├── index.html      # Main markup — header, hero, products, reviews, footer
+├── style.css       # All styling, layout, and responsive breakpoints
+├── java.js         # Sticky header, mobile menu toggle, wishlist animation
+├── picturess/       # Product images, logo, and blog thumbnails
+└── README.md
+```
+
+##  Getting Started
+-------------------
+
+No build tools, no installs — just clone and open.
+
+```bash
+# Clone the repository
+git clone https://github.com/Ssafwa/E-commerce-KUMO.git
+
+# Move into the project folder
+cd E-commerce-KUMO
+
+# Open index.html in your browser
+```
+
+
+
+
+##  License
+-----------
+
+This project is open source and available under the [MIT License](LICENSE).
+
+##  Author
+----------
+
+**Safwan** (`Ssafwa`)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Ssafwa-181717?style=flat-square&logo=github)](https://github.com/Ssafwa)
+
+---
+
+<div align="center">
+
+If you like this project, consider giving it a ⭐ — it helps a lot!
+
+</div>
