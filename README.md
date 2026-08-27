@@ -1,7 +1,13 @@
 <div align="center">
 
 #  KUMO — E-COMMERCE WEBSITE
-----------------------------
+
+<img width="1920" height="908" alt="image" src="https://github.com/user-attachments/assets/4162cd35-6663-49d4-a693-f1eb7603ed6c" />
+<img width="1920" height="908" alt="image" src="https://github.com/user-attachments/assets/5a1e0eb3-813a-49be-ad2c-d13fb3420053" />
+<img width="1920" height="908" alt="image" src="https://github.com/user-attachments/assets/e58141b9-ec27-4a50-a4c4-e8d46cf9e33d" />
+<img width="1920" height="908" alt="image" src="https://github.com/user-attachments/assets/29e97fa9-8e1c-4475-99e1-0289f82a20e2" />
+
+
 
 **A sleek, responsive front-end e-commerce landing page**
 
@@ -16,6 +22,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](#-license)
 
 </div>
+
+[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Website-ee1c47?style=for-the-badge)](https://e-commerce-kumo.vercel.app/)
 
 ---
 
