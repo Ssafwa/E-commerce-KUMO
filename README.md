@@ -11,17 +11,8 @@
 
 **A sleek, responsive front-end e-commerce landing page**
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Made  by Safwan](https://img.shields.io/badge/Made%20by-Safwan-orange?style=for-the-badge)](https://github.com/Ssafwa)
 
-[![Repo Size](https://img.shields.io/github/repo-size/Ssafwa/E-commerce-KUMO?style=flat-square)](https://github.com/Ssafwa/E-commerce-KUMO)
-[![Last Commit](https://img.shields.io/github/last-commit/Ssafwa/E-commerce-KUMO?style=flat-square)](https://github.com/Ssafwa/E-commerce-KUMO/commits/main)
-[![Stars](https://img.shields.io/github/stars/Ssafwa/E-commerce-KUMO?style=flat-square)](https://github.com/Ssafwa/E-commerce-KUMO/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](#-license)
 
-</div>
 
 [![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Website-ee1c47?style=for-the-badge)](https://e-commerce-kumo.vercel.app/)
 
