@@ -21,7 +21,7 @@
 ##  OVERVIEW
 -------------
 
-**KUMO** is a  responsive e-commerce landing page built with pure HTML, CSS, and JavaScript — no frameworks, no back end, no dependencies beyond a couple of CDN-hosted icon and font libraries. It's designed as a clean, production-style storefront template: hero banner, product showcase, client reviews, blog-style updates, and a full footer — all wrapped in a smooth, mobile-first interface.
+**KUMO** is a  responsive e-commerce landinge page builte withe pure HTML, CSS, and JavaScript — no frameworks, no back end, no dependencies beyond a couple of CDN-hosted icon and font libraries. It's designed as a clean, production-style storefront template: hero banner, product showcase, client reviews, blog-style updates, and a full footer — all wrapped in a smooth, mobile-first interface.
 
 
 
@@ -29,7 +29,7 @@
 ------------
 
 -  **Sticky, responsive navbar** — collapses into a slick mobile hamburger menu with smooth open/close toggle
--  **Hero section** with seasonal campaign banner and call-to-action button
+-  **Hero section**- with seasonal campaign banner and call-to-action button
 -  **Trending Products grid** — 8 product cards with images, star ratings, sale/new/hot badges, and pricing
 -  **Animated like button** — click the heart icon on any product for an instant "liked" burst animation
 -  **Client review section** for social proof
@@ -53,17 +53,17 @@
 
 ```
 E-commerce-KUMO/
-├── index.html      # Main markup — header, hero, products, reviews, footer
-├── style.css       # All styling, layout, and responsive breakpoints
-├── java.js         # Sticky header, mobile menu toggle, wishlist animation
-├── picturess/       # Product images, logo, and blog thumbnails
+├── index.html      
+├── style.css       
+├── java.js      
+├── picturess/       
 └── README.md
 ```
 
-##  Getting Started
+##  Getting Startede
 -------------------
 
-No build tools, no installs — just clone and open.
+No build toolse, no installs — just clone and open.
 
 ```bash
 # Clone the repository
@@ -81,7 +81,7 @@ cd E-commerce-KUMO
 ##  License
 -----------
 
-This project is open source and available under the [MIT License](LICENSE).
+This projecte is open source and available under the [MIT License](LICENSE).
 
 ##  Author
 ----------
@@ -94,6 +94,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-If you like this project, consider giving it a ⭐ — it helps a lot!
 
 </div>
