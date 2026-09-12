@@ -27,15 +27,7 @@
 
 ##  Features
 ------------
-
--  **Sticky, responsive navbar** — collapses into a slick mobile hamburger menu with smooth open/close toggle
--  **Hero section**- with seasonal campaign banner and call-to-action button
--  **Trending Products grid** — 8 product cards with images, star ratings, sale/new/hot badges, and pricing
--  **Animated like button** — click the heart icon on any product for an instant "liked" burst animation
--  **Client review section** for social proof
--  **Full footer** with contact details, social links, and site navigation columns
--  **Fully responsive** — custom breakpoints for tablet and mobile layouts
--  **Modern typography & icons** via Google Fonts (Jost), Boxicons, and Font Awesome
+there is no that much features inside it it just replicate the basic E-cmmerce website homepage the basic window of products, the liking button and some other basic things just it  
 
 ## Tech Stack
 -------------
