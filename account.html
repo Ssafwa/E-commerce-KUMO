@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in or create a KUMO demo account.">
+    <title>Account | KUMO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="content-page">
+    <header>
+        <a href="index.html#home" class="logo" aria-label="KUMO home"><img class="logo-img" src="picturess/logo.png" alt="KUMO"></a>
+        <ul class="navmenu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#trending">Shop</a></li>
+            <li><a href="index.html#trending">Products</a></li>
+            <li><a href="index.html#updates">Page</a></li>
+            <li><a href="docs.html">Docs</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="index.html#trending" aria-label="Browse the collection"><i class="bx bx-search" aria-hidden="true"></i></a>
+            <a href="account.html" aria-label="Your account"><i class="bx bx-user" aria-hidden="true"></i></a>
+            <a href="index.html#trending" aria-label="Browse the collection"><i class="bx bx-cart" aria-hidden="true"></i></a>
+            <button class="bx bx-menu icon-button menu-toggle" id="menu-icon" type="button" aria-label="Open menu" aria-expanded="false"></button>
+        </div>
+    </header>
+
+    <main id="account-page" class="account-content">
+        <p class="page-eyebrow">WELCOME TO KUMO</p>
+        <h1>Your account</h1>
+        <p class="page-intro">Sign in to your demo account or create one to try the account flow.</p>
+
+        <section class="account-card" aria-label="Account access">
+            <div class="account-tabs" aria-label="Choose account action">
+                <button type="button" data-account-tab="login" aria-pressed="true">Sign in</button>
+                <button type="button" data-account-tab="register" aria-pressed="false">Create account</button>
+            </div>
+
+            <form id="login-form" data-account-form="login">
+                <label for="login-email">Email address</label>
+                <input id="login-email" name="email" type="email" autocomplete="email" required>
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+                <button class="main-btn account-submit" type="submit">Sign in</button>
+            </form>
+
+            <form id="register-form" data-account-form="register" hidden>
+                <label for="register-email">Email address</label>
+                <input id="register-email" name="email" type="email" autocomplete="email" required>
+                <label for="register-password">Password</label>
+                <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <span class="field-help">Use at least 8 characters.</span>
+                <label for="register-confirm-password">Confirm password</label>
+                <input id="register-confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+                <button class="main-btn account-submit" type="submit">Create account</button>
+            </form>
+
+            <p id="account-status" class="form-status" role="status" aria-live="polite"></p>
+            <div id="account-session" class="account-session" hidden>
+                <p>Signed in as <strong data-session-email></strong></p>
+                <button id="account-logout" class="text-button" type="button">Sign out</button>
+            </div>
+        </section>
+
+        <p class="demo-notice">This is a front-end demo only. Account details stay in this browser and are not connected to a store or server. Please do not use a real or reused password.</p>
+        <p class="back-link"><a href="index.html#home">← Back to the KUMO home page</a></p>
+    </main>
+
+    <footer class="content-footer">
+        <p>Copyright &copy; 2026 KUMO. All rights reserved.</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
