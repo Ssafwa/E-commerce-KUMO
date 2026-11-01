@@ -19,26 +19,19 @@ kumo is a simple e-commmerce website  without any backend
 
 ##  OVERVIEW
 
-
-**KUMO** is a responsive storefront built with HTML, CSS, and JavaScript also without any backent server. It includes product search and filters, quick product details, locally saved favorites and ratings, a persistent demo cart, demo order history, an account-flow demo, and a shopping guide. The project uses CDN-hosted fonts and icons.
-
-
+**KUMO** is a storeferont built with HTML, CSS, and JavaScript also without any backent server. It includes product search and filters, quick product details,   a  demo cart, demo order history, an account-flow demo, and a shopping guide. and this website is hosted in vercel.
 
 ##  Features
 
- - Search the product collection by name.
-  
- - Filter by category, size, and starting price; sort by name or price.
-  
- - Open product details, save favorites, and leave a five-star rating.
-  
- - Navigate between the home, shop, product, updates, and help pages.
-  
+ - search feature. 
+ 
+ - can be filter by category,size and price.
+
+ - save favority, also star rating.
+   
  - Add products to a persistent demo cart, select a size, adjust quantities, and try the demo checkout.
   
- - Review saved demo orders from the account page.
-  
- - creat account.
+ - creat an account.
 
 
 ## Tech Stack
@@ -75,12 +68,12 @@ cd E-commerce-KUMO
 
 
 ##  License
------------
+
 
 This projecte is open source and available under the [MIT License](LICENSE).
 
 ##  Author
-----------
+
 
 **Safwan** (`Ssafwa`)
 
@@ -92,3 +85,9 @@ This projecte is open source and available under the [MIT License](LICENSE).
 
 
 </div>
+
+
+> [!NOTE]
+> A NOTE FOR HACKCLUB SHIPWRIGHTS
+> This readme is fully writen by me 
+>  <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/c3ba197a-4e7d-46a2-8823-d868379978b8" />
