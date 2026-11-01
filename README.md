@@ -26,19 +26,19 @@ kumo is a simple e-commmerce website  without any backend
 
 ##  Features
 
-- Search the product collection by name.
+ - Search the product collection by name.
   
-- Filter by category, size, and starting price; sort by name or price.
+ - Filter by category, size, and starting price; sort by name or price.
   
-- Open product details, save favorites, and leave a five-star rating.
+ - Open product details, save favorites, and leave a five-star rating.
   
-- Navigate between the home, shop, product, updates, and help pages.
+ - Navigate between the home, shop, product, updates, and help pages.
   
-- Add products to a persistent demo cart, select a size, adjust quantities, and try the demo checkout.
+ - Add products to a persistent demo cart, select a size, adjust quantities, and try the demo checkout.
   
-- Review saved demo orders from the account page.
+ - Review saved demo orders from the account page.
   
-- creat account.
+ - creat account.
 
 
 ## Tech Stack
