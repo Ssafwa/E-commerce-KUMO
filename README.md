@@ -10,7 +10,7 @@ kumo is a simple e-commmerce website  without any backend
 
 
 
-**A responsive fashion storefront built with HTML, CSS, and JavaScript**
+**HTML, CSS, and JavaScript were used to create a this .**
 
 
  [live demo] = (https://e-commerce-kumo.vercel.app/)]
@@ -18,12 +18,11 @@ kumo is a simple e-commmerce website  without any backend
 
 
 ##  OVERVIEW
-
-**KUMO** is a storeferont built with HTML, CSS, and JavaScript also without any backent server. It includes product search and filters, quick product details,   a  demo cart, demo order history, an account-flow demo, and a shopping guide. and this website is hosted in vercel.
+ **KUMO** is a simple web application that doesn't require a backend server. Quick product information, a demo cart, a demo order history, an account-flow demo, a shopping guide, and product search and filters are all included. and Vercel is used to host this website.
 
 ##  Features
 
- - search feature. 
+ - search function. 
  
  - can be filter by category,size and price.
 
@@ -37,7 +36,7 @@ kumo is a simple e-commmerce website  without any backend
 ## Tech Stack
 
 | Structure | HTML5 |
-| Styling | CSS3  |
+| Styling | CSS |
 
 
 
@@ -49,19 +48,16 @@ E-commerce-KUMO/
 ├── style.css
 ├── java.js
 ├── picturess/
-└── README.md
 ```
 
 ##  Getting Startede
 
 ```bash
-# Clone the repository
+
 git clone https://github.com/Ssafwa/E-commerce-KUMO.git
 
-# Move into the project folder
 cd E-commerce-KUMO
 
-# Open index.html in your browser
 ```
 
 
@@ -74,20 +70,11 @@ This projecte is open source and available under the [MIT License](LICENSE).
 
 ##  Author
 
-
-**Safwan** (`Ssafwa`)
-
 [![GitHub](https://img.shields.io/badge/GitHub-Ssafwa-181717?style=flat-square&logo=github)](https://github.com/Ssafwa)
 
 ---
 
-<div align="center">
 
 
-</div>
 
 
-> [!NOTE]
-> A NOTE FOR HACKCLUB SHIPWRIGHTS
-> This readme is fully writen by me 
->  <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/c3ba197a-4e7d-46a2-8823-d868379978b8" />
