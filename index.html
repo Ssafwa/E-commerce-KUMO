@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Responsive full website</title>
+    <title>KUMO | Everyday style</title>
     <!-- CSS-link -->
     <link rel="stylesheet" href="style.css">
 
@@ -19,35 +19,42 @@
 <body>
 
     <header>
-        <a href="#" class="logo"><img src="picturess/logo.png" alt="Logo"></a>
+        <a href="#home" class="logo" aria-label="KUMO home"><img class="logo-img" src="picturess/logo.png" alt="KUMO"></a>
 
         <ul class="navmenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">Docs</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#trending">Shop</a></li>
+            <li><a href="#trending">Products</a></li>
+            <li><a href="#updates">Page</a></li>
+            <li><a href="docs.html">Docs</a></li>
 
         </ul>
 
         <div class="nav-icon">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
+            <button class="icon-button" id="search-toggle" type="button" aria-label="Search products" aria-expanded="false">
+                <i class='bx bx-search' aria-hidden="true"></i>
+            </button>
+            <a href="account.html" aria-label="Sign in or create an account"><i class='bx bx-user' aria-hidden="true"></i></a>
+            <a href="#trending" aria-label="Browse the collection"><i class='bx bx-cart' aria-hidden="true"></i></a>
 
-            <div class="bx bx-menu" id="menu-icon">
-
-            </div>
+            <button class="bx bx-menu icon-button menu-toggle" id="menu-icon" type="button" aria-label="Open menu" aria-expanded="false"></button>
         </div>
     </header>
 
-    <section class="main-home">
+    <form class="search-panel" id="product-search-form" role="search" hidden>
+        <label for="product-search">Search the collection</label>
+        <input id="product-search" name="q" type="search" placeholder="Try “dress” or “jeans”" autocomplete="off">
+        <button class="main-btn" type="submit">Search</button>
+        <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <section class="main-home" id="home">
         <div class="main-text ">
             <h5>winter collection</h5>
             <h1>new winter <br> collection 2026 </h1>
             <p>there's nothing like trend</p>
 
-            <a href="#" class="main-btn">Shop Now <i class="bx bx-righ-arrow-alt"></i> </a>
+            <a href="#trending" class="main-btn">Shop Now <i class="bx bx-right-arrow-alt" aria-hidden="true"></i> </a>
         </div>
 
         <div class="down-arrow">
@@ -56,7 +63,7 @@
     </section>
 
     <!-- trending-products-section -->
-   <sction class="trending-product" id="trending">
+   <section class="trending-product" id="trending">
     <div class="centre-text">
         <h2>Our Trending <span>Products</span></h2>
     </div>
@@ -249,7 +256,7 @@
 
    <!-- Client-Review-section -->
 
-   <section class="client-review">
+   <section class="client-review" id="reviews">
     <div class="reviews">
         <h3>Client Review</h3>
         <img src="picturess/bl-2.png" alt="">
@@ -265,7 +272,7 @@
    </section>
 
   <!-- update-news-section -->
-   <section class="Update-news">
+   <section class="Update-news" id="updates">
     <div class="up-center-text">
         <h2>New Update</h2>
     </div>
@@ -322,55 +329,55 @@
             <img src="picturess/logo.png" alt="">
 
             <p>325 Grant Street Longview, <br>TX united kingdom 765378</p>
-            <p>545454454545</p>
-            <p>safwanmuhammed576@gmail.com</p>
+            <p><a href="tel:+15454544545">+1 545 454 4545</a></p>
+            <p><a href="mailto:safwanmuhammed576@gmail.com">safwanmuhammed576@gmail.com</a></p>
 
              <div class="social-icon">
-    <a href="#"><i class='bx bxl-facebook'></i></a>
-    <a href="#"><i class='bx bxl-twitter' ></i></a>
-    <a href="#"><i class='bx bxl-instagram' ></i></a>
-    <a href="#"><i class='bx bxl-youtube' ></i></a>
-    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    <a href="https://www.facebook.com/" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+    <a href="https://www.twitter.com/" aria-label="Twitter"><i class='bx bxl-twitter' ></i></a>
+    <a href="https://www.instagram.com/" aria-label="Instagram"><i class='bx bxl-instagram' ></i></a>
+    <a href="https://www.youtube.com/" aria-label="YouTube"><i class='bx bxl-youtube' ></i></a>
+    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
              </div>
         </div>
 
         <div class="second-info">
             <h4>Support</h4>
-            <p>Contact us</p>
-            <p>About Page</p>
-            <p>Size Guid</p>
-            <p>Shopping & resturns</p>
-            <p>Privacy</p>
+            <p><a href="mailto:safwanmuhammed576@gmail.com">Contact us</a></p>
+            <p><a href="#reviews">About page</a></p>
+            <p><a href="docs.html#sizing">Size guide</a></p>
+            <p><a href="docs.html#orders">Shopping & returns</a></p>
+            <p><a href="docs.html#privacy">Privacy</a></p>
             </div>
 
        <div class="third-info">
         <h4>Shop</h4>
-        <p>Mens Shopping</p>
-        <p>Womens Shopping</p>
-        <p>Kids Shopping</p>
-        <p>Furniture</p>
-        <P>Discount</P>
+        <p><a href="#trending">Men's shopping</a></p>
+        <p><a href="#trending">Women's shopping</a></p>
+        <p><a href="#trending">Kids' shopping</a></p>
+        <p><a href="#trending">New arrivals</a></p>
+        <p><a href="#trending">Discounts</a></p>
        </div>
 
        <div class="fourt-info">
         <h4>Company</h4>
-        <p>About</p>
-        <p>Blog</p>
-        <p>Affiliat </p>
-        <p>LOgin</p>
+        <p><a href="#reviews">About</a></p>
+        <p><a href="#updates">Blog</a></p>
+        <p><a href="docs.html">Help & info</a></p>
+        <p><a href="account.html">Login</a></p>
        </div>
 
        <div class="five">
     <h4>Subscribe</h4>
     <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
-    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eum, Debitis.</p>
+    <p>Questions about an order? <a href="docs.html#orders">Read our shopping guide.</a></p>
     <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
      </div>
        </div>
     </section>
 
     <div class="end-text">
-        <p>Copyright C @20226. All Right Reserved.Desinged By SAaFwAn.</p>
+        <p>Copyright &copy; 2026 KUMO. All rights reserved.</p>
     </div>
 
 
