@@ -70,7 +70,7 @@ This projecte is open source and available under the [MIT License](LICENSE).
 
 ##  Author
 
-[GitHub](https://img.shields.io/badge/GitHub-Ssafwa-181717?style=flat-square&logo=github)](https://github.com/Ssafwa)
+(https://img.shields.io/badge/GitHub-Ssafwa-181717?style=flat-square&logo=github)](https://github.com/Ssafwa)
 
 ---
 
