@@ -49,6 +49,8 @@
             </form>
 
             <form id="register-form" data-account-form="register" hidden>
+                <label for="register-name">Full name</label>
+                <input id="register-name" name="name" autocomplete="name" required>
                 <label for="register-email">Email address</label>
                 <input id="register-email" name="email" type="email" autocomplete="email" required>
                 <label for="register-password">Password</label>
@@ -61,12 +63,26 @@
 
             <p id="account-status" class="form-status" role="status" aria-live="polite"></p>
             <div id="account-session" class="account-session" hidden>
-                <p>Signed in as <strong data-session-email></strong></p>
+                <p>Welcome, <strong data-session-name></strong></p>
+                <p><span data-session-email></span></p>
                 <button id="account-logout" class="text-button" type="button">Sign out</button>
             </div>
         </section>
 
-        <p class="demo-notice">This is a front-end demo only. Account details stay in this browser and are not connected to a store or server. Please do not use a real or reused password.</p>
+        <section id="account-orders" class="account-orders" aria-labelledby="account-orders-title" hidden>
+            <h2 id="account-orders-title">Demo order history</h2>
+            <div id="order-history-list"></div>
+            <p id="order-history-empty" class="account-orders-empty">No demo orders for this email yet.</p>
+        </section>
+
+        <section id="account-favorites" class="account-orders" aria-labelledby="account-favorites-title">
+            <h2 id="account-favorites-title">Saved favorites</h2>
+            <div id="account-favorites-list"></div>
+            <p id="account-favorites-empty" class="account-orders-empty">No saved favorites on this browser yet.</p>
+            <p><a class="text-button" href="index.html#trending">Browse products</a></p>
+        </section>
+
+        <p class="demo-notice">This is a local demo. Account details stay in this browser and do not create a real store account. Please do not use a real or reused password.</p>
         <p class="back-link"><a href="index.html#home">← Back to the KUMO home page</a></p>
     </main>
 

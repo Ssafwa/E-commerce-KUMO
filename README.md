@@ -21,18 +21,23 @@
 ##  OVERVIEW
 -------------
 
-**KUMO** is a responsive storefront built with HTML, CSS, and JavaScript. It includes a product collection, live product search, working section navigation, an account-flow demo, and a shopping guide. The project has no application framework or server; it uses CDN-hosted fonts and icons.
+**KUMO** is a responsive storefront built with HTML, CSS, and JavaScript. It includes product search and filters, quick product details, locally saved favorites and ratings, a persistent demo cart, demo order history, an account-flow demo, and a shopping guide. The project uses CDN-hosted fonts and icons.
 
 
 
 ##  Features
 ------------
 - Search the product collection by name.
+- Filter by category, size, and starting price; sort by name or price.
+- Open product details, save favorites, and leave a five-star rating.
 - Navigate between the home, shop, product, updates, and help pages.
+- Add products to a persistent demo cart, select a size, adjust quantities, and try the demo checkout.
+- Review saved demo orders from the account page.
 - Create a demo account, sign in, and sign out in the browser.
-- Like products and use the responsive mobile navigation.
+- Use the responsive mobile navigation.
+- Browse the added men's shirt and denim-jacket outfit from the existing photos.
 
-The account flow is for demonstration only. Account records stay in local browser storage and are not backed by a server. Do not use a real or reused password. A production shop requires server-side authentication and order processing.
+Favorites, ratings, demo orders, the cart, and account records are stored in this browser only. Checkout does not take payment or arrange delivery. Product sizes and starting prices are examples and are not linked to stock. Do not use real payment details, a real password, or a reused password.
 
 ## Tech Stack
 -------------

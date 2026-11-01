@@ -35,7 +35,10 @@
                 <i class='bx bx-search' aria-hidden="true"></i>
             </button>
             <a href="account.html" aria-label="Sign in or create an account"><i class='bx bx-user' aria-hidden="true"></i></a>
-            <a href="#trending" aria-label="Browse the collection"><i class='bx bx-cart' aria-hidden="true"></i></a>
+            <button class="icon-button cart-toggle" id="cart-toggle" type="button" aria-label="Open shopping bag, 0 items" aria-expanded="false">
+                <i class='bx bx-cart' aria-hidden="true"></i>
+                <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+            </button>
 
             <button class="bx bx-menu icon-button menu-toggle" id="menu-icon" type="button" aria-label="Open menu" aria-expanded="false"></button>
         </div>
@@ -47,6 +50,38 @@
         <button class="main-btn" type="submit">Search</button>
         <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
     </form>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+        <div class="cart-heading">
+            <h2 id="cart-title">Your shopping bag</h2>
+            <button class="cart-close icon-button" id="cart-close" type="button" aria-label="Close shopping bag">
+                <i class="bx bx-x" aria-hidden="true"></i>
+            </button>
+        </div>
+        <p id="cart-status" class="cart-status" role="status" aria-live="polite"></p>
+        <div id="cart-items" class="cart-items"></div>
+        <p id="cart-empty" class="cart-empty">Your bag is empty. Add something you love.</p>
+        <button id="keep-shopping" class="text-button keep-shopping" type="button">Continue shopping</button>
+        <div class="cart-total">
+            <span>Subtotal</span>
+            <strong id="cart-subtotal">$0.00</strong>
+        </div>
+        <p class="cart-disclaimer">Demo only: cart totals use each product’s starting price. No payment or order is processed.</p>
+        <button id="checkout-toggle" class="main-btn cart-checkout" type="button" disabled>Continue to checkout</button>
+        <form id="checkout-form" class="checkout-form" hidden>
+            <h3>Delivery details</h3>
+            <label for="checkout-name">Name</label>
+            <input id="checkout-name" name="name" autocomplete="name" required>
+            <label for="checkout-email">Email address</label>
+            <input id="checkout-email" name="email" type="email" autocomplete="email" required>
+            <label for="checkout-address">Delivery address</label>
+            <textarea id="checkout-address" name="address" autocomplete="street-address" rows="3" required></textarea>
+            <p class="checkout-note">This demo does not collect card details or arrange delivery.</p>
+            <button class="main-btn cart-checkout" type="submit">Place demo order</button>
+        </form>
+        <div id="order-confirmation" class="order-confirmation" role="status" hidden></div>
+    </aside>
 
     <section class="main-home" id="home">
         <div class="main-text ">
@@ -67,6 +102,53 @@
     <div class="centre-text">
         <h2>Our Trending <span>Products</span></h2>
     </div>
+
+      <div class="product-tools" aria-label="Filter and sort products">
+    <label>
+        Category
+        <select id="category-filter">
+            <option value="all">All products</option>
+            <option value="sets">Sets &amp; suits</option>
+            <option value="bottoms">Trousers &amp; jeans</option>
+            <option value="dresses">Dresses &amp; kurtas</option>
+            <option value="menswear">Men's clothing</option>
+        </select>
+    </label>
+    <label>
+        Maximum starting price
+        <select id="price-filter">
+            <option value="all">Any price</option>
+            <option value="50">Up to $50</option>
+            <option value="99">Up to $99</option>
+            <option value="110">Up to $110</option>
+            <option value="130">Up to $130</option>
+        </select>
+    </label>
+    <label>
+        Size
+        <select id="size-filter">
+            <option value="all">Any size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+    </label>
+    <label>
+        Sort by
+        <select id="sort-products">
+            <option value="featured">Featured</option>
+            <option value="name-asc">Name: A to Z</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+        </select>
+    </label>
+    <button id="favorites-filter" class="filter-toggle" type="button" aria-pressed="false">Saved favorites</button>
+    <button id="clear-filters" class="filter-reset" type="button">Clear filters</button>
+    <p id="filter-status" class="filter-status" role="status" aria-live="polite"></p>
+      </div>
 
       <div class="products">
         <div class="row">
@@ -109,7 +191,7 @@
             </div>
 
             <div class="price">
-                <h4>Formel Men Lowers</h4>
+                <h4>Utility Shorts</h4>
                 <p>$99 - $129</p>
             </div>
         </div>
@@ -133,7 +215,7 @@
             </div>
 
             <div class="price">
-                <h4>Half Running Suit</h4>
+                <h4>Printed Shorts Set</h4>
                 <p>$99 - $129</p>
             </div>
         </div>
@@ -155,7 +237,7 @@
             </div>
 
             <div class="price">
-                <h4>Half Fancy Lady Dress</h4>
+                <h4>Floral Maxi Dress</h4>
                 <p>$99 - $129</p>
             </div>
         </div>
@@ -178,7 +260,7 @@
             </div>
 
             <div class="price">
-                <h4>Flix Flox Jeans</h4>
+                <h4>Everyday Straight Jeans</h4>
                 <p>$99 - $129</p>
             </div>
         </div>
@@ -222,13 +304,13 @@
             </div>
 
             <div class="price">
-                <h4>printed straight kurtas</h4>
+                <h4>Printed Top &amp; Trousers</h4>
                 <p>$99 - $129</p>
             </div>
         </div>
 
                 <div class="row">
-            <img src="picturess/8.jpg" alt="">
+            <img src="picturess/8.jpg" alt="Casual outfit with a blue denim jacket and olive trousers">
             <div class="product-text">
                 <h5>Sale</h5>
             </div>
@@ -244,29 +326,54 @@
             </div>
 
             <div class="price">
-                <h4>collot full dress</h4>
+                <h4>Denim Jacket &amp; Trousers</h4>
                 <p>$99 - $129</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="picturess/happy-african-american-man-glasses-shirt-point-finger-blank-copy-space-aside-smiling-black-male-spectacles-isolated-170064954.webp" alt="Man modeling a casual button-up shirt">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="ratting"></div>
+            <div class="price">
+                <h4>Men's Casual Shirt</h4>
+                <p>$49 - $69</p>
             </div>
         </div>
 
 
       </div>
+      <p class="catalog-note">Prices shown are ranges; cart totals use each item’s listed starting price. Sizes are demo choices and are not linked to stock.</p>
 
    </section>
+
+    <div class="details-backdrop" id="details-backdrop" hidden></div>
+    <section class="product-details" id="product-details" role="dialog" aria-modal="true" aria-labelledby="details-title" hidden>
+        <button class="details-close icon-button" id="details-close" type="button" aria-label="Close product details"><i class="bx bx-x" aria-hidden="true"></i></button>
+        <img id="details-image" src="" alt="">
+        <div class="details-copy">
+            <p class="page-eyebrow" id="details-category"></p>
+            <h2 id="details-title"></h2>
+            <p class="details-price" id="details-price"></p>
+            <p id="details-description"></p>
+            <p class="details-size-note">Choose a size or length on the product card before adding this item to your bag.</p>
+            <button class="main-btn details-shop" id="details-shop" type="button">Choose size</button>
+        </div>
+    </section>
 
    <!-- Client-Review-section -->
 
    <section class="client-review" id="reviews">
     <div class="reviews">
-        <h3>Client Review</h3>
-        <img src="picturess/bl-2.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam doloremque autem cupiditate facere placeat qui doloribus illum. Libero voluptate dignissimos voluptates fuga? Facere alias reiciendis voluptatibus, expedita iure neque?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto porro perspiciatis earum modi doloremque. Ab aut non omnis excepturi id dicta maxime ex accusamus provident amet! Velit, maiores a.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolor incidunt corporis voluptatem voluptatibus nihil accusantium sequi vero dolore exercitationem? Sequi enim, numquam quod animi labore nihil obcaecati ex dicta!
-
-            <h2>Mark</h2>
-            <p>ceo of addle</p>
-        </p>
+        <h3>Customer notes</h3>
+        <p>There are no verified customer reviews in this demo yet. Try the five-star rating on a product to leave a local rating on this device.</p>
+        <h2>KUMO community</h2>
+        <p>Product ratings are saved only in this browser.</p>
 
     </div>
    </section>
@@ -279,43 +386,28 @@
 
     <div class="update-cart">
         <div class="cart">
-            <img src="picturess/bl-1.png" alt="">
-            <h5>26 jan 20226</h5>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet facilis. Dolor excepturi doloremque nisi consequuntur obcaecati ipsa rerum dignissimos quidem, reiciendis dicta repellat optio fugit aut molestias nobis tempore.
-
-            </h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-                elit. Necessitatibus eaque adipisci et pariatur perferendis aliquam quidem corporis reprehenderit quod unde. Repellat quam velit voluptate optio nisi enim ne
-                mo veniam minima.</p>
-
-                <h6>Continue Reading...</h6>
+            <img src="picturess/8.jpg" alt="Blue denim jacket styled with olive trousers">
+            <h5>Style notes</h5>
+            <h4>Build an easy winter outfit</h4>
+            <p>Start with a comfortable base, add one warm layer, then keep the colors simple. A small change in texture can make a familiar outfit feel new.</p>
+            <h6>Wear what feels right</h6>
         </div>
 
                <div class="cart">
-            <img src="picturess/bl-3.png" alt="">
-            <h5>26 jan 20226</h5>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet facilis. Dolor excepturi doloremque nisi consequuntur obcaecati ipsa rerum dignissimos quidem, reiciendis dicta repellat optio fugit aut molestias nobis tempore.
-
-            </h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-                elit. Necessitatibus eaque adipisci et pariatur perferendis aliquam quidem corporis reprehenderit quod unde. Repellat quam velit voluptate optio nisi enim ne
-                mo veniam minima.</p>
-
-                <h6>Continue Reading...</h6>
+            <img src="picturess/1.jpg" alt="Printed trousers styled with a light top">
+            <h5>Care guide</h5>
+            <h4>Keep everyday pieces looking fresh</h4>
+            <p>Check the care label before washing. Separate colors, avoid overfilling the machine, and air-dry delicate items when the label recommends it.</p>
+            <h6>Small care, longer wear</h6>
         </div>
 
 
                <div class="cart">
-            <img src="picturess/happy-african-american-man-glasses-shirt-point-finger-blank-copy-space-aside-smiling-black-male-spectacles-isolated-170064954.webp" alt="">
-            <h5>26 jan 20226</h5>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet facilis. Dolor excepturi doloremque nisi consequuntur obcaecati ipsa rerum dignissimos quidem, reiciendis dicta repellat optio fugit aut molestias nobis tempore.
-
-            </h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-                elit. Necessitatibus eaque adipisci et pariatur perferendis aliquam quidem corporis reprehenderit quod unde. Repellat quam velit voluptate optio nisi enim ne
-                mo veniam minima.</p>
-
-                <h6>Continue Reading...</h6>
+            <img src="picturess/4.jpg" alt="Floral maxi dress shown as a relaxed one-piece outfit">
+            <h5>Fit guide</h5>
+            <h4>Find a fit that works for you</h4>
+            <p>Use the size selector as a demo, and remember that fit can vary between cuts. This sample collection does not include verified garment measurements.</p>
+            <h6>Comfort comes first</h6>
         </div>
 
 
