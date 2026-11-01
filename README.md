@@ -12,9 +12,7 @@
 **A responsive fashion storefront built with HTML, CSS, and JavaScript**
 
 
-
-
-[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Website-ee1c47?style=for-the-badge)](https://e-commerce-kumo.vercel.app/)
+ [![link] = (https://e-commerce-kumo.vercel.app/)]
 
 ---
 
