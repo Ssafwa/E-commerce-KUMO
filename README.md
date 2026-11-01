@@ -9,7 +9,7 @@
 
 
 
-**A sleek, responsive front-end e-commerce landing page**
+**A responsive fashion storefront built with HTML, CSS, and JavaScript**
 
 
 
@@ -21,13 +21,18 @@
 ##  OVERVIEW
 -------------
 
-**KUMO** is a  responsive e-commerce landinge page builte withe pure HTML, CSS, and JavaScript — no frameworks, no back end, no dependencies beyond a couple of CDN-hosted icon and font libraries. It's designed as a clean, production-style storefront template: hero banner, product showcase, client reviews, blog-style updates, and a full footer — all wrapped in a smooth, mobile-first interface.
+**KUMO** is a responsive storefront built with HTML, CSS, and JavaScript. It includes a product collection, live product search, working section navigation, an account-flow demo, and a shopping guide. The project has no application framework or server; it uses CDN-hosted fonts and icons.
 
 
 
 ##  Features
 ------------
-there is no that much features inside it it just replicate the basic E-cmmerce website homepage the basic window of products, the liking button and some other basic things just it  
+- Search the product collection by name.
+- Navigate between the home, shop, product, updates, and help pages.
+- Create a demo account, sign in, and sign out in the browser.
+- Like products and use the responsive mobile navigation.
+
+The account flow is for demonstration only. Account records stay in local browser storage and are not backed by a server. Do not use a real or reused password. A production shop requires server-side authentication and order processing.
 
 ## Tech Stack
 -------------
@@ -45,10 +50,12 @@ there is no that much features inside it it just replicate the basic E-cmmerce w
 
 ```
 E-commerce-KUMO/
-├── index.html      
-├── style.css       
-├── java.js      
-├── picturess/       
+├── index.html
+├── account.html
+├── docs.html
+├── style.css
+├── java.js
+├── picturess/
 └── README.md
 ```
 
